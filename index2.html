@@ -428,7 +428,6 @@
 		}
 
 }</style>
-	<link rel="stylesheet" href="https://us14.campaign-archive.com/css/archivebar-desktop.css" mc:nocompile>
 	</head>
         <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" style="height: 100%;margin: 0;padding: 0;width: 100%;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #dee0e2;">
         <!---->
@@ -754,36 +753,5 @@
                 </tr>
             </table>
         </center>
-    </body>    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script><script type="text/javascript">
-            $(document).ready(function() {
-                document.getElementById("copyToClipboard").addEventListener("click", function () {
-                    var input = document.getElementById("clipboardSource");
-                    input.select();
-                    var successful = document.execCommand("copy");
-                    if (successful) {
-                        alert('Copied "' + input.value + '" to your clipboard.');
-                    } else {
-                        throw new Error("Failed to copy text (verify caller was in the context of an event handler)");
-                    }
-                });
-
-                $('li.more > a').click(function(){
-                    var toToggle = $($(this).attr('data-to-toggle'));
-                    if(toToggle.is(':visible')){
-                        toToggle.slideUp('fast');
-                        $(this).removeClass('is-active');
-                        if ($('#awesomebar').find('.is-active').length < 1){
-                            $('#awesomebar').removeClass('sub-active');
-                        }
-                    } else {
-                        toToggle.slideDown('fast');
-                        $(this).addClass('is-active');
-                        $('#awesomebar').addClass('sub-active');
-                    }
-                    return false;
-                });
-
-            });
-        </script>
   </body>
 </html>
